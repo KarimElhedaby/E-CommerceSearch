@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layoutDirection="rtl"
+        android:background="@drawable/rounded_search_frame">
+
+
+    <TextView
+        android:id="@+id/productCategoryTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+         android:lines="1"
+        android:maxLength="12"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/custom_rounded_rectangle"
+        android:fontFamily="@font/font_heavy"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/colorSandBrown"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="any cate.. " />
+
+    <TextView
+        android:id="@+id/productRateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/rate_bg"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/font_heavy"
+        android:gravity="center"
+        android:padding="4dp"
+        android:textColor="@color/colorWhite"
+
+        android:textSize="12sp"
+        app:drawableEndCompat="@drawable/ic_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1" />
+
+
+    <ImageView
+        android:id="@+id/productImageView"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:scaleType="centerInside"
+        android:layout_marginTop="12dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productCategoryTextView"
+        tools:src="@drawable/temp_image" />
+
+    <TextView
+        android:id="@+id/productTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/font_bold"
+        android:gravity="center"
+        android:lines="1"
+        android:maxWidth="120dp"
+        android:maxLines="1"
+
+        android:textColor="@color/colorBlack"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/productImageView"
+        tools:text="test test tes " />
+
+    <TextView
+        android:id="@+id/productPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font_semi_bold"
+        android:textColor="@color/colorSandBrown"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/productTextView"
+        tools:text="000" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,14 @@
+
+
+ // Write  database files here if available
+
+ 1 ) Product DataBase
+ 2) Product Model
+ 3 ) Products Dao
+
+
+ *  Then create
+
+ class DbRepository(val productDb: ProductDatabase) : ProductsDao  {
+            write the implementation of each operation
+ }
